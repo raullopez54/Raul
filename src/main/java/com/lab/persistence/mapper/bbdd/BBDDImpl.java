@@ -40,7 +40,7 @@ public class BBDDImpl implements BBDD
   {
     try
     {
-      this.bbdd = "jdbc:mysql://localhost/spring";
+      this.bbdd = "jdbc:mysql://localhost/bbdd";
       this.user = "root";
       this.clave = "";
 

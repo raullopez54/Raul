@@ -1,10 +1,10 @@
-com\lab\persistence\mapper\TestMapperImpl.class
 com\lab\persistence\model\TestModel.class
 com\lab\persistence\mapper\TestMapper.class
-com\lab\persistence\service\TestServiceImpl.class
 com\lab\controllers\Test.class
 com\lab\LabApplication.class
 com\lab\persistence\service\TestService.class
-com\lab\persistence\mapper\bbdd\BBDD.class
 com\lab\persistence\mapper\bbdd\BBDDImpl.class
+com\lab\persistence\mapper\TestMapperImpl.class
+com\lab\persistence\service\TestServiceImpl.class
+com\lab\persistence\mapper\bbdd\BBDD.class
 com\lab\configuration\LabConfiguration.class
