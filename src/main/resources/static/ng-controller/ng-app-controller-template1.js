@@ -2,15 +2,25 @@ app.controller('ng-app-controller-template1', ['$scope', '$http', function ($sco
   $http)
   {
     console.log('1')
-    $scope.mensaje = 'Texto cargado desde el controlador Pagina1Controller';
+    $scope.info = 'Texto cargado desde el controlador Pagina1Controller';
 
-    $http.post('/test',
+    //******SIEMPRE ES IGUAL *******************************************
+        
+    $http.post('/test', //Nombre del controlador JAVA
     {
-      text: 'hello'
+      propiedad: 'hello',
+      table: 'vero'
     })
     .then(function (response)
     {
-      console.log(response.data)
+      //console.log(response.data)
+      var data = response.data;
+      for(var i=0, max = data.length; i<max; i++)
+          {
+                $scope.info += data[i].table;
+            }
     });
+    
+    //*************************************************************
 
   }]);

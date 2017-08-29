@@ -38,7 +38,7 @@ app.directive('apploading', ['$http', function ($http)
 
         scope.$watch(scope.isLoading, function (v)
         {
-          console.log(JSON.stringify(elm) + ' ' + JSON.stringify(attrs))
+          
           if (v)
           {
             elm[0].classList.add('appLoading');
